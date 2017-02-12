@@ -1,19 +1,23 @@
-# sikadroid
+# sikadroid #
 
-Developed in 2012 for A presentation in Accra about App Engine, Android and HTML5.
+_Developed in 2012 for A presentation in Accra about App Engine, Android and HTML5._
 
-**What is this?
+1. What is this?
+	* This is a FinTech Solution mock up it grew into a very well Designed platform
+	* It was developed to show how to use HTML5, Android and an AppEngine Backend
+	* Its was developed in under 45mins with lots of pressure :)
+	* Its developed by @laudarch
 
-* This is a FinTech Solution mock up it grew into a very well Designed platform
-* It was developed to show how to use HTML5, Android and an AppEngine Backend
-* Its was developed in under 45mins with lots of pressure :)
-* Its developed by @laudarch
+2. Source available at [Github](https://github.com/laudarch/sikadroid "Github Repo") and [Google Code](https://code.google.com/archive/p/sika-droid/)
 
-- Source available at (Github)[https://github.com/laudarch/sikadroid] and (Google Code)[https://code.google.com/archive/p/sika-droid/]
+3. Source includes Android Client Source
 
-- Source includes Android Client Source
+## LIVE DEMO: [SikaDroid](https://sikadroid.appspot.com/) ##
 
-- LICENSE
+- - - - 
+
+### LICENSE
+`
 /*
  * Copyright (c) 2012 Archzilon Eshun-Davies <laudarch@qremiaevolution.org>
  *
@@ -29,5 +33,5 @@ Developed in 2012 for A presentation in Accra about App Engine, Android and HTML
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-
- **\m/
+`
+__\m/__
