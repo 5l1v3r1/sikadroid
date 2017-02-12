@@ -22,17 +22,19 @@
 # imports
 import os
 import sys
-import cgi
+#import cgi
 import math
 import datetime
 import urllib
 import wsgiref.handlers
 
+import webapp2
+
 from google.appengine.ext import db
 from google.appengine.api import users
-from google.appengine.ext import webapp
+#from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
-from google.appengine.ext.webapp import util
+#from google.appengine.ext.webapp import util
 
 # import from private library
 try:
@@ -59,7 +61,7 @@ def init_laudlib():
 	sys.path = LAUDLIB_PATHS + sys.path;
 
 #   Base request handler extends webapp.RequestHandler
-class BaseRequestHandler(webapp.RequestHandler):
+class BaseRequestHandler(webapp2.RequestHandler):
 	#-------------------------------------------------------#
 	# showtpl shows the requested template with its values  #
 	# @args:                                                #
@@ -134,14 +136,12 @@ class Register(BaseRequestHandler):
 	
 def main():
     init_laudlib();
-    droidcollector = webapp.WSGIApplication(
+
+droidcollector = webapp2.WSGIApplication(
         [('/', Home),
          ('/AddRecord', AddRecord),
 	 ('/GetRecords', GetRecords),
 	 ('/Register', Register)], debug=_DEBUG_);
-
-    util.run_wsgi_app(droidcollector)
-
 
 if __name__ == '__main__':
     main()
